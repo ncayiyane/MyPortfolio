@@ -51,7 +51,7 @@ body{
 .navbar a:hover{
     background: linear-gradient(45deg, #f06, #3cf, #f06);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
 }
 
 .home {
@@ -584,7 +584,7 @@ section{
 }
 .my_skills{
     text-align: center;
-    
+
 }
 .container1{
     width: 600px;
