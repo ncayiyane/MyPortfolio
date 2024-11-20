@@ -43,7 +43,7 @@ body{
     margin-left: 35px;
     font-weight: 500;
     opacity: 0;
-    animation: slideTop 5s ease forwards;
+    animation: slideBottom 5s ease forwards;
     animation-delay: calc(.2s * var(--i))
 }
 
@@ -51,7 +51,7 @@ body{
 .navbar a:hover{
     background: linear-gradient(45deg, #f06, #3cf, #f06);
     -webkit-text-fill-color: transparent;
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
 }
 
 .home {
@@ -278,7 +278,7 @@ body{
 @keyframes slideTop{
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(-100px);
     }
     100%{
         opacity: 1;
@@ -418,107 +418,106 @@ body{
     flex-wrap: wrap;
     margin: 40px 0;
    
-} */
-/* .skills h1{
+} 
+.skills h1{
     font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 40px;
-} */
+} 
 
-/* .skills_container{
+.skills_container{
     height: 100vh;
     width: 100%;
-    /* background:#292945;  */
-    /* margin: 10%;
+    background:#292945;  
+    margin: 10%;
     display: inline;
     align-items: center;    
     justify-content: center;
-    padding: 10%; */
-/* } */ 
+    padding: 10%; 
+ } 
 
 
 
-/* .skills h2{
+.skills h2{
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 40px;
     margin-bottom: 5px;
     color: #fff;
     font-size: 16px;
-} */
-/* .progress_bar{
+} 
+.progress_bar{
     background: #959995;
     width: 600px;
     height: 10px;
     border-radius: 5px;
-} */
+} 
 
-/* .progress_bar div{
+.progress_bar div{
     height: 10px;
     border-radius: 5px;   
-} */
-/* .progress_bar div span{ 
+} 
+.progress_bar div span{ 
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    /* background: #dad2cb9d; */
-    /* float: right;
+    background: #dad2cb9d; 
+    float: right;
     margin-top: -15px;
     margin-right: -15px;
     display: flex;
     align-items: center;
-    justify-content: center; */
-/* } */ 
+    justify-content: center; 
+} 
 
-/* .html{
+.html{
     width: 95%;
     animation: html 2s;
     background: orange;
-    /* color: orange; */
-    /* background: orange; */
-/* } */ 
-/* .css{
+    color: orange; 
+     background: orange; 
+ }  
+.css{
     width: 90%;
     animation: css 2s;
     background: blue;
-    /* color: blue; */
-/* } */ 
-/* .javascript{
+    color: blue; 
+} 
+.javascript{
     width: 69%;
     animation: javascript 2s;
     background: rgb(132, 132, 81);
-} */
-/* .python{
+} 
+ .python{
     width: 60%;
     animation: python 2s;
     background: green;
-} */
-/* .react{
+} 
+.react{
     width: 75%;
     animation: react 2s;
     background: red;
-} */
-
-/* @keyframes html{
+} 
+@keyframes html{
     0%{ 
         width: 0%;
     }
     100%{
-        width: 95%;  */
-    /* } */
-/* } */
-/* @keyframes css{
+        width: 95%;  
+     } 
+} 
+ @keyframes css{
     0%{                             
         width: 0%;
     }       
     100%{
         width: 90%; 
     }
-}    */
-/* @keyframes javascript{
+}    
+@keyframes javascript{
     0%{             
         width: 0%;
     }       
@@ -541,9 +540,9 @@ body{
     100%{
         width: 75%; 
     }       
-} */
+} 
 
-/* .html span{
+.html span{
     border: 2px solid orange;
 }
 .css span{
@@ -557,7 +556,7 @@ body{
 }
 .react span{
     border: 2px solid red;
-} */
+} 
 
 
 /*Skills Page Style End */
@@ -570,27 +569,67 @@ body{
     font-size: 60px;
     padding-bottom: 70px;
     padding-top: 30px;
-} */
+} 
 
-/* .my_skills span{
+.my_skills span{
     font-style: italic;
     color: #3cf;
     font-weight: 900;
-} */
+}  */
 
-section{
+
+
+
+
+
+
+
+
+section {
     display: flex;
     flex-wrap: wrap;
 }
-.my_skills{
-    text-align: center;
+/* section .my_skills, h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} */
+
+.skills_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 
 }
+
+.my_skills{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    
+
+}
+
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+ 
 .container1{
     width: 600px;
-    height: 500px;
-    padding: 7px 90px;
+    height: fit-content;
+    padding: 75px 90px;
     margin-left: 120px;
+    display: flex;
+    flex-direction: column;
 }  
 
 .heading{
@@ -598,7 +637,7 @@ section{
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    margin-bottom: 15%;
+    margin-bottom: 50px;
 }
 
 .bar{
@@ -638,6 +677,7 @@ section{
     transform-origin: left;
 }
 
+
 @keyframes animate{
     100%{
         transform: scaleX(1);
@@ -653,13 +693,13 @@ section{
     transform-origin: left; 
 }
 .progress_line.html span{
-    width: 95%;
+    width: 100%;
 }
 .progress_line.css span{
-    width: 90%;
+    width: 100%;
 }
 .progress_line.javascript span{
-    width: 69%;
+    width: 70%;
 }
 .progress_line.python span{
     width: 60%;
@@ -667,11 +707,11 @@ section{
 .progress_line.react span{
     width: 75%;
 }
-.progress_line.github span{
+/* .progress_line.github span{
     width: 70%;
-}
+} */
 .progress_line.java span{
-    width: 70%;
+    width: 40%;
 }
 
 .progress_line span::after{
@@ -688,13 +728,13 @@ section{
     font-weight: 500;
 }
 .progress_line.html span::after{
-    content: "95%";
+    content: "100%";
 }
 .progress_line.css span::after{
-    content: "90%";
+    content: "100%";
 }
 .progress_line.javascript span::after{
-    content: "69%";
+    content: "70%";
 }
 .progress_line.python span::after{
     content: "60%";
@@ -702,11 +742,11 @@ section{
 .progress_line.react span::after{
     content: "75%";
 }
-.progress_line.github span::after{
+/* .progress_line.github span::after{
     content: "70%";
-}
+} */
 .progress_line.java span::after{
-    content: "70%";
+    content: "40%";
 }
 .progress_line span::before{
     content: "";
@@ -737,6 +777,7 @@ section{
     align-items: flex-start;
 }
 .radial_bars .radial_bar{
+    margin-top: 8rem;
     width: 50%;
     height: 170px;
     margin-bottom: 10px;
@@ -826,4 +867,201 @@ section{
     font-weight: 500;
     animation: showText 0.5 1s linear forwards;
     opacity: 0;
+} 
+
+.text{
+    text-align: center;
 }
+
+.portfolio_section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #1a1c3b, #0c1022);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.portfolio_section .heading {
+    font-size: 36px;
+    color: #3cf;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-align: center;
+}
+
+.portfolio_intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.portfolio_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px; /* Ensures the grid does not stretch too far on larger screens */
+    margin: 0 auto;
+}
+
+.portfolio_item {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the background */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 280px; /* Fixed width for uniformity */
+    margin-bottom: 20px;
+}
+
+.portfolio_item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid #3cf; /* Add a bottom border to separate image from text */
+}
+
+.portfolio_content {
+    padding: 20px;
+    text-align: center;
+    background: #0c1022; /* Dark background for text */
+    color: #fff; /* White text for contrast */
+}
+
+.portfolio_content h2 {
+    font-size: 24px;
+    color: #3cf;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.portfolio_content p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.view_project {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3cf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.view_project:hover {
+    background-color: #2a9cb8;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .portfolio_grid {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .portfolio_item {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 320px;
+    }
+}
+
+
+.contact {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #1a1c3b, #0c1022);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact .container1 {
+    max-width: 700px;
+    width: 100%;
+    background: #0c1022;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.contact .heading {
+    font-size: 36px;
+    color: #3cf;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.contact_form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact_form .form_group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact_form label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    color: #3cf;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #3cf;
+    border-radius: 5px;
+    background: #121430;
+    font-size: 16px;
+    color: #fff;
+    transition: border 0.3s ease;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+    border-color: #f06;
+    outline: none;
+}
+
+.contact_form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    background: #3cf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+.contact_form button:hover {
+    background: #f06;
+}
+
