@@ -47,12 +47,12 @@ body{
     animation-delay: calc(.2s * var(--i))
 }
 
-.navbar a.active,
 .navbar a:hover{
     background: linear-gradient(45deg, #f06, #3cf, #f06);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
 
 .home {
     width: 100%;
