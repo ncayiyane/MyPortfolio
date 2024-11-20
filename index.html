@@ -13,25 +13,26 @@
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
         <nav class="navbar">
-            <a href="#" style="--i:1;" class="active">Home</a>
-            <a href="#" style="--i:2;">About</a>
-            <a href="#" style="--i:3;">Skills</a>
-            <a href="#" style="--i:4;">Portfolio</a>
-            <a href="#" style="--i:5;">Contact</a>
+            <a href="#Home"  style="--i:1;" class="active">Home</a>
+            <a href="#About" style="--i:2;">About</a>
+            <a href="#Skills" style="--i:3;">Skills</a>
+            <a href="#Portfolio" style="--i:4;">Portfolio</a>
+            <a href="#Contact" style="--i:5;">Contact</a>
         </nav>
     </header>
+
     <!-- Home Page  -->
-    <section class="home">
+    <section id="Home"  class="home">
         <div class="home_social">
-            <a href="#"><i class='bx bxl-linkedin'></i></i></a>
-            <a href="#"><i class='bx bxl-github'></i></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></i></a>
+            <a href="https://www.linkedin.com/in/aphiwe-ncayiyane-4149b31a8/"><i class='bx bxl-linkedin'></i></i></a>
+            <a href="https://github.com/ncayiyane"><i class='bx bxl-github'></i></i></a>
+            <a href="https://www.instagram.com/aphiwe_nc/"><i class='bx bxl-instagram'></i></i></a>
         </div>
         <div class="home_content">
             <h1>Hi, I'm <span>Aphiwe Andrew Ncayiyane</span></h1>
-            <h3>Front-End Developer</h3>
-            <p> I am a Front-End Developer with a passion for creating beautiful and functional web applications.</p>
-            <a href="#" class="btn">Download CV</a>
+            <h3>Full Stack Developer</h3>
+            <p> I am A Full Stack Developer with a passion for creating beautiful and functional web applications.</p>
+            <a href="Aphiwe Andrew Ncayiyane CV.pdf" class="btn">Download CV</a>
         </div>
         <div class="home_img">
             <div class="circle">
@@ -46,7 +47,7 @@
     <!--Home Page End-->
 
     <!-- About Me Page  Start-->
-    <section class="about">
+    <section id="About" class="about">
         <div class="about_content">
             <h2>About Me</h2>
             <p>Hello! I'm Aphiwe Andrew Ncayiyane, a passionate Full Stack Developer with experience in building
@@ -95,115 +96,175 @@
     <!--Skills Page End-->
 
     <!-- Skills Page 2 Start-->
-    <section class="skills">
-    
-    <div class="container1" id="skills">
-        <h1 class="my_skills">My<span> kills</span></h1>
-        <h1 class="heading">Technical Skills</h1>
-        <div class="Technical_Bars">
-            <div class="bar"><i class='bx bxl-html5 bx-tada' style='color:#c95d2e'></i>
-                <div class="info">
-                    <span>HTML</span>
+
+    <section id="Skills" class="skills_container">
+        <header class="my_skills">
+            <h1>My <span>Skills</span></h1>
+        </header>
+        <div class="container1" id="skills">
+            <h1 class="heading">Technical Skills</h1>
+            <div class="Technical_Bars">
+                <div class="bar"><i class='bx bxl-html5 bx-tada'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress_line html">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress_line html">
-                    <span></span>
+                <div class="bar"><i class='bx bxl-css3 bx-tada'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress_line css">
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-            <div class="bar"><i class='bx bxl-css3 bx-tada' style='color:#147bbc'></i>
-                <div class="info">
-                    <span>CSS</span>
+                <div class="bar"><i class='bx bxl-javascript bx-rotate-90 bx-tada'></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress_line javascript">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress_line css">
-                    <span></span>
+                <div class="bar"><i class='bx bxl-python bx-rotate-90 bx-tada'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress_line python">
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-            <div class="bar"><i class='bx bxl-javascript bx-rotate-90 bx-tada' style='color:#b0bc1e'></i>
-                <div class="info">
-                    <span>JavaScript</span>
+                <div class="bar"><i class='bx bxl-react bx-rotate-90 bx-tada'></i>
+                    <div class="info">
+                        <span>React</span>
+                    </div>
+                    <div class="progress_line react">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="progress_line javascript">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i class='bx bxl-react bx-rotate-90 bx-tada' style='color: #69BCBC'></i>
-                <div class="info">
-                    <span>React</span>
-                </div>
-                <div class="progress_line react">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i class='bx bxl-python bx-tada' style='color:rgba(47, 15, 187, 0.99)'></i>
-                <div class="info">
-                    <span>Python</span>
-                </div>
-                <div class="progress_line python">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i class='bx bxl-java bx-tada' style='color:rgba(220,233,4,0.99)'></i>
-                <div class="info">
-                    <span>Java</span>
-                </div>
-                <div class="progress_line java">
-                    <span></span>
-                </div>
-            </div>
-            <div class="bar"><i class='bx bxl-github bx-tada' style='color:#403d40'></i>
-                <div class="info">
-                    <span>GitHub</span>
-                </div>
-                <div class="progress_line github">
-                    <span></span>
+                <div class="bar"><i class='bx bxl-java bx-rotate-90 bx-tada'></i>
+                    <div class="info">
+                        <span>Java</span>
+                    </div>
+                    <div class="progress_line java">
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container1">
-        <h1 class="heading1">Professional Skills</h1>
-        <div class="radial_bars">
-
-            <div class="radial_bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path_1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Communication</div>
-            </div>
-            <div class="radial_bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path_2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Problem Solving</div>
-            </div>
-            <div class="radial_bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path_3" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Team Work</div>
-            </div>
-            <div class="radial_bar">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path_4" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Creativity</div>
-            </div>
-            
-        </div>
-    </div>
     
-
+        <div class="container1">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial_bars">
+                <div class="radial_bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path_1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Communication</div>
+                </div>
+                <div class="radial_bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path_2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Problem Solving</div>
+                </div>
+                <div class="radial_bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path_3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Team Work</div>
+                </div>
+                <div class="radial_bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress_bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path_4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
+    <section id="Portfolio" class="portfolio_section">
+        <div class="container2">
+            <h1 class="heading">My Portfolio</h1>
+            <p class="portfolio_intro">Here are some of the projects I’ve worked on, showcasing my skills and creativity.</p>
+            <div class="portfolio_grid">
+                <!-- Project 1 -->
+                <div class="portfolio_item">
+                    <img src="forevercare.png" alt="Project 1" class="portfolio_image">
+                    <div class="portfolio_content">
+                        <h2>Forever Care Website </h2>
+                        <p>The website offers easy appointment booking, check-ups, and medication collection, creating a seamless healthcare experience. ForeverCare prioritizes personalized care and a trusted relationship, with convenient access to various services and providers, all available with no cost for essential services, utilizing HTML, CSS and React.</p>
+                        <a href="https://forever-care.netlify.app/" class="view_project">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio_item">
+                    <img src="Reactapp.png" alt="Project 2" class="portfolio_image">
+                    <div class="portfolio_content">
+                        <h2>favmoviesapp</h2>
+                        <p>The FavMoviesApp allows users to explore and manage their favorite movies. The app offers an interactive interface where users can search, view, and add movies to their personalized favorites list. It is built with React, providing a dynamic and user-friendly experience for movie enthusiasts looking to organize and track their favorite films</p>
+                        <a href="https://favmoviesapp.netlify.app" class="view_project">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="Node.png" alt="Project 2" class="portfolio_image">
+                    <div class="portfolio_content">
+                        <h2>Node.js API</h2>
+                        <p>The repository for the Node.js API demonstrates how to create a simple backend API using Node.js and Express. It includes basic functionalities like handling routes, working with HTTP requests, and setting up a server. This API can serve as a starting point for building more complex applications, with features such as user authentication or data persistence added over time</p>
+                        <a href="https://github.com/ncayiyane/Node.js-API.git" class="view_project">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="hq720.jpg" alt="Project 2" class="portfolio_image">
+                    <div class="portfolio_content">
+                        <h2>PythonData</h2>
+                        <p>The PythonData repository focuses on analyzing data related to Marvel movies, including budget, worldwide revenue, and audience/critics scores. It uses Python libraries like Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, exploratory analysis, and visualization. Key insights include the financial performance of movies and trends in audience preferences and critical reception. The analysis includes visualizations like histograms, scatter plots, and bar plots to uncover the relationship between budget and revenue. You can view the repository</p>
+                        <a href="https://github.com/ncayiyane/PythonData" class="view_project">View Project</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="Contact" class="contact">
+        <div class="container1">
+            <h1 class="heading">Contact Me</h1>
+            <p>If you have any questions, feel free to reach out. I'm always happy to connect!</p>
+            <form class="contact_form" action="submit_form.php" method="POST">
+                <div class="form_group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form_group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    
+      
+    
 </body>
 
 </html>
