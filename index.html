@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo active">Portfolio</a>
         <nav class="navbar">
             <a href="#Home"  style="--i:1;" class="active">Home</a>
             <a href="#About" style="--i:2;">About</a>
@@ -22,7 +23,7 @@
     </header>
 
     <!-- Home Page  -->
-    <section id="Home"  class="home">
+    <section id="Home"  class="home animate-on-scroll">
         <div class="home_social">
             <a href="https://www.linkedin.com/in/aphiwe-ncayiyane-4149b31a8/" ><i class='bx bxl-linkedin'></i></i></a>
             <a href="https://github.com/ncayiyane"><i class='bx bxl-github'></i></i></a>
@@ -47,7 +48,7 @@
     <!--Home Page End-->
 
     <!-- About Me Page  Start-->
-    <section id="About" class="about">
+    <section id="About" class="about animate-on-scroll">
         <div class="about_content">
             <h2>About Me</h2>
             <p>Hello! I'm Aphiwe Andrew Ncayiyane, a passionate Full Stack Developer with experience in building
@@ -97,7 +98,7 @@
 
     <!-- Skills Page 2 Start-->
 
-    <section id="Skills" class="skills_container">
+    <section id="Skills" class="skills_container animate-on-scroll">
         <header class="my_skills">
             <h1>My <span>Skills</span></h1>
         </header>
@@ -195,9 +196,9 @@
     </section>
 
 
-    <section id="Portfolio" class="portfolio_section">
+    <section id="Portfolio" class="portfolio_section animate-on-scroll">
         <div class="container2">
-            <h1 class="heading">My Portfolio</h1>
+            <h1 class="heading">My Projects</h1>
             <p class="portfolio_intro">Here are some of the projects I’ve worked on, showcasing my skills and creativity.</p>
             <div class="portfolio_grid">
                 <!-- Project 1 -->
@@ -239,11 +240,11 @@
     </section>
     
 
-    <section id="Contact" class="contact">
+    <section id="Contact" class="contact _section animate-on-scroll">
         <div class="container1">
             <h1 class="heading">Contact Me</h1>
             <p>If you have any questions, feel free to reach out. I'm always happy to connect!</p>
-            <form class="contact_form" action="https://formspree.io/f/mpwzllvk" method="POST">
+            <form class="contact_form" action="https://getform.io/f/bollzkxa" method="POST">
                 <div class="form_group">
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
