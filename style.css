@@ -408,6 +408,14 @@ body{
     border-radius: 10px; /* Optional: Add some border radius for aesthetics */
 }
 
+
+@media (max-width: 1059px) {
+    .about_image img {
+        display: none
+    }
+  }
+
+
 /* About Me style end  */
 
 /* Skills Style Start */
@@ -578,196 +586,122 @@ body{
     font-weight: 900;
 }  */
 
+/*Skills Page 2 Satrt*/
 
 
-
-
-
-
-
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-/* section .my_skills, h1{
-    align-items: center;
+.box__color {
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #1a1c3b;
+  }
+  
+  .center-content {
     display: flex;
     justify-content: center;
-} */
+    margin-top: 20px;
+  }
+  
+  .skills-header {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  
+  .text-gray-header {
+    color: #3cf;
+    font-weight: 700;
+    font-size: 2rem;
+   
 
-.skills_container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-
-}
-
-.my_skills{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 2rem;
+  }
+  
+  .section__header-text {
+    font-size: 1.5rem;
+    color: #3cf;
+    font-weight: bold;
     text-decoration: underline;
-    text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    
+    margin: 0;
+  }
 
-}
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 11px;
+  }
+  
+  @media (min-width: 640px) {
+    .skills-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+  }
+  
+  /* .skill-card {
+    box-shadow: 0 4px 6px rgba(18, 228, 175, 0.548);
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 0.5s;
 
+  } */
+
+  .skill-card {
+    position: relative;
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 0.5s;
+    background-color: #22a2b3; /* Optional, ensures a background */
+  }
+  
+  .skill-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.815), rgba(18, 228, 175, 0.8));
+    z-index: -1; /* Ensures it stays behind the card */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(18, 228, 175, 0.548); /* Optional to add shadow under gradient */
+    transition: transform 0.5s, background 0.3s;
+  }
+  
+  .skill-card:hover::after {
+    background: linear-gradient(45deg, rgba(18, 161, 228, 0.822), rgba(18, 228, 175, 1));
+    box-shadow: 0 8px 12px rgba(24, 87, 223, 0.822); /* Enhanced shadow on hover */
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05); /* Ensure this is applied to the card on hover */
+  }
+  
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    width: 40px;
+    margin: 0 auto 8px;
+  }
+  
+  @media (min-width: 640px) {
+    .icon {
+      width: 64px;
+    }
+  }
+  
 .heading1{
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
-}
- 
-.container1{
-    width: 600px;
-    height: fit-content;
-    padding: 75px 90px;
-    margin-left: 120px;
-    display: flex;
-    flex-direction: column;
-}  
-
-.heading{
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-}
-
-.bar{
-    font-size: 25px;
-}
-
-.Technical_Bars .bar{
-    margin: 40px 0;
-}
-
-.Technical_Bars .bar:first-child{
-    margin-top: 0;
-}
-
-.Technical_Bars .bar:last-child{
-    margin-bottom: 0;
-}
-
-.Technical_Bars .bar .info{
-    margin-bottom: 5px;
-}
-
-.Technical_Bars .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards; 
-}
-
-.Technical_Bars .bar .progress_line{
-    position: relative;
-    border-radius: 10px;
-    height: 5px;
-    width: 100%;
-    background: #000;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-
-@keyframes animate{
-    100%{
-        transform: scaleX(1);
-    }
-}
-.Technical_Bars .bar .progress_line span{
-    height: 100%;
-    background-color: #3cf;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left; 
-}
-.progress_line.html span{
-    width: 100%;
-}
-.progress_line.css span{
-    width: 100%;
-}
-.progress_line.javascript span{
-    width: 70%;
-}
-.progress_line.python span{
-    width: 60%;
-}
-.progress_line.react span{
-    width: 75%;
-}
-/* .progress_line.github span{
-    width: 70%;
-} */
-.progress_line.java span{
-    width: 40%;
-}
-
-.progress_line span::after{
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-    font-weight: 500;
-}
-.progress_line.html span::after{
-    content: "100%";
-}
-.progress_line.css span::after{
-    content: "100%";
-}
-.progress_line.javascript span::after{
-    content: "70%";
-}
-.progress_line.python span::after{
-    content: "60%";
-}
-.progress_line.react span::after{
-    content: "75%";
-}
-/* .progress_line.github span::after{
-    content: "70%";
-} */
-.progress_line.java span::after{
-    content: "40%";
-}
-.progress_line span::before{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 8px;
-    border-right-width: 8px;
-    border-top-color: #000;
-    top: -10px;
-    right: 0; 
-    animation: showText 0.5s 1.9s linear forwards;
-    opacity: 0;
-}
-
-@keyframes showText{
-    100%{
-        opacity: 1;
-    }
+    color: #3cf;
 }
 
 .radial_bars{
@@ -854,7 +788,7 @@ section {
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5 1s linear forwards;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .progress_bar .text{
@@ -867,109 +801,104 @@ section {
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5 1s linear forwards;
-    opacity: 0;
+    /* opacity: 0; */
 } 
 
 .text{
     text-align: center;
 }
 
-.portfolio_section {
-    padding: 80px 20px;
-    background: linear-gradient(to bottom, #1a1c3b, #0c1022);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-}
 
-.portfolio_section .heading {
-    font-size: 36px;
-    color: #3cf;
-    margin-bottom: 20px;
+
+
+
+
+
+
+/*Skills Page 2 Style End*/
+
+/*Project Page Start*/
+.heading{
+    text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-align: center;
-}
-
-.portfolio_intro {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #ccc;
-    max-width: 700px;
-    margin: 0 auto 40px;
-}
-
-.portfolio_grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 1rem;
-    width: 100%;
-    max-width: 1200px; /* Ensures the grid does not stretch too far on larger screens */
-    margin: 0 auto;
-}
-
-.portfolio_item {
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the background */
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 280px; /* Fixed width for uniformity */
-    margin-bottom: 20px;
-}
-
-.portfolio_item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-.portfolio_image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 4px solid #3cf; /* Add a bottom border to separate image from text */
-}
-
-.portfolio_content {
-    padding: 20px;
-    text-align: center;
-    background: #0c1022; /* Dark background for text */
-    color: #fff; /* White text for contrast */
-}
-
-.portfolio_content h2 {
-    font-size: 24px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
     color: #3cf;
-    margin-bottom: 10px;
-    font-weight: 600;
 }
-
-.portfolio_content p {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 20px;
-    line-height: 1.5;
+.portfolio_intro{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 5rem;
 }
-
-.view_project {
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for balanced layout */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+  }
+  
+  @media (min-width: 640px) {
+    .portfolio_grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    }
+  }
+  
+  .portfolio_item {
+    box-shadow: 0 4px 6px rgba(240, 25, 25, 0.904);
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .portfolio_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(8, 241, 241, 0.979); 
+  }
+  
+  .portfolio_image {
+    width: 100%;
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images don't stretch */
+  }
+  
+  .portfolio_content {
+    padding: 16px;
+    text-align: center;
+    overflow: hidden; /* Prevent text overflow */
+  }
+  
+  .portfolio_content h2 {
+    font-size: 1.5rem; /* Title size */
+    color: #1a1c3b;
+    margin-bottom: 8px;
+  }
+  
+  .portfolio_content p {
+    font-size: 0.9rem; /* Smaller font to prevent overly long cards */
+    color: #666;
+    line-height: 1.4; /* Balanced line spacing */
+    max-height: 80px; /* Limit the paragraph height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .view_project {
     display: inline-block;
-    padding: 12px 25px;
-    background-color: #3cf;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    background-color: #1a1c3b;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-    font-weight: 600;
-}
-
-.view_project:hover {
-    background-color: #2a9cb8;
-}
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .view_project:hover {
+    background-color: #2aa8e6;
+  }
+  
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
@@ -983,6 +912,8 @@ section {
         max-width: 320px;
     }
 }
+
+/*Project Page End*/
 
 
 .contact {
