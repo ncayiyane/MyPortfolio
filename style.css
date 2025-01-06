@@ -409,9 +409,20 @@ body{
 }
 
 
-@media (max-width: 1059px) {
+@media (max-width: 956px) {
     .about_image img {
         display: none
+    }
+    .about {
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+        background: #1a1c3b;
+    }
+    .about_image {
+        display: none;
     }
   }
 
@@ -420,173 +431,7 @@ body{
 
 /* Skills Style Start */
 
-/* .skills{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
-   
-} 
-.skills h1{
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 40px;
-} 
 
-.skills_container{
-    height: 100vh;
-    width: 100%;
-    background:#292945;  
-    margin: 10%;
-    display: inline;
-    align-items: center;    
-    justify-content: center;
-    padding: 10%; 
- } 
-
-
-
-.skills h2{
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: #fff;
-    font-size: 16px;
-} 
-.progress_bar{
-    background: #959995;
-    width: 600px;
-    height: 10px;
-    border-radius: 5px;
-} 
-
-.progress_bar div{
-    height: 10px;
-    border-radius: 5px;   
-} 
-.progress_bar div span{ 
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background: #dad2cb9d; 
-    float: right;
-    margin-top: -15px;
-    margin-right: -15px;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-} 
-
-.html{
-    width: 95%;
-    animation: html 2s;
-    background: orange;
-    color: orange; 
-     background: orange; 
- }  
-.css{
-    width: 90%;
-    animation: css 2s;
-    background: blue;
-    color: blue; 
-} 
-.javascript{
-    width: 69%;
-    animation: javascript 2s;
-    background: rgb(132, 132, 81);
-} 
- .python{
-    width: 60%;
-    animation: python 2s;
-    background: green;
-} 
-.react{
-    width: 75%;
-    animation: react 2s;
-    background: red;
-} 
-@keyframes html{
-    0%{ 
-        width: 0%;
-    }
-    100%{
-        width: 95%;  
-     } 
-} 
- @keyframes css{
-    0%{                             
-        width: 0%;
-    }       
-    100%{
-        width: 90%; 
-    }
-}    
-@keyframes javascript{
-    0%{             
-        width: 0%;
-    }       
-    100%{
-        width: 69%; 
-    }
-}
-@keyframes python{
-    0%{             
-        width: 0%;
-    }       
-    100%{
-        width: 60%; 
-    }
-}
-@keyframes react{
-    0%{             
-        width: 0%;
-    }       
-    100%{
-        width: 75%; 
-    }       
-} 
-
-.html span{
-    border: 2px solid orange;
-}
-.css span{
-    border: 2px solid blue;
-}
-.javascript span{
-    border: 2px solid yellow;
-}
-.python span{
-    border: 2px solid green;
-}
-.react span{
-    border: 2px solid red;
-} 
-
-
-/*Skills Page Style End */
-
-/*Skills Page 2 Style Satrt*/
-
-
-/* .my_skills{
-    text-align: center;
-    font-size: 60px;
-    padding-bottom: 70px;
-    padding-top: 30px;
-} 
-
-.my_skills span{
-    font-style: italic;
-    color: #3cf;
-    font-weight: 900;
-}  */
-
-/*Skills Page 2 Satrt*/
 
 
 .box__color {
