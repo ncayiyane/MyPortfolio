@@ -13,7 +13,8 @@ body{
     line-height: 1.6;
 }
 
-.header{
+/* Default styles */
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,18 +26,23 @@ body{
     align-items: center;
     z-index: 1000;
 }
-.logo{
+
+.logo {
     font-size: 25px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    pointer-events: none;
     padding: 0 10%;
     opacity: 0;
     animation: slideTop 1s ease forwards;
 }
 
-.navbar a{
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar a {
     display: inline-block;
     font-size: 18px;
     color: #fff;
@@ -45,13 +51,51 @@ body{
     font-weight: 500;
     opacity: 0;
     animation: slideBottom 5s ease forwards;
-    animation-delay: calc(.2s * var(--i))
+    animation-delay: calc(.2s * var(--i));
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background: linear-gradient(45deg, #f06, #3cf, #f06);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    .navbar.active {
+        display: flex; /* Show the navbar when active */
+    }
 }
 
 
