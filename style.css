@@ -420,6 +420,7 @@ body{
 
 .about {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -473,17 +474,16 @@ body{
 
 /* About Me style end  */
 
+
+
 /* Skills Style Start */
-
-
-
-
 .box__color {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     margin-top: 16px;
     padding: 16px;
     border-radius: 8px;
-    background-color: #1a1c3b;
+    background-color: #0c1022;
   }
   
   .center-content {
@@ -491,6 +491,7 @@ body{
     justify-content: center;
     margin-top: 20px;
   }
+ 
   
   .skills-header {
     text-align: center;
@@ -521,6 +522,7 @@ body{
     text-align: center;
     padding: 11px;
   }
+
   
   @media (min-width: 640px) {
     .skills-grid {
@@ -529,14 +531,6 @@ body{
     }
   }
   
-  /* .skill-card {
-    box-shadow: 0 4px 6px rgba(18, 228, 175, 0.548);
-    padding: 16px;
-    border-radius: 8px;
-    transition: transform 0.5s;
-
-  } */
-
   .skill-card {
     position: relative;
     padding: 16px;
@@ -593,6 +587,14 @@ body{
     color: #3cf;
 }
 
+.container1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1c3b;
+}
 .radial_bars{
     width: 100%;
     display: flex;
@@ -746,37 +748,67 @@ body{
 }
 
 /* Card Styles */
-.portfolio_item {
-    box-shadow: 0 4px 6px rgba(240, 25, 25, 0.904);
-    background-color: #fff;
+.projects_section {
+    padding: 50px 0;
+    background-color:#0c1022;
+    text-align: center;
+}
+
+.container_custom {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.projects_heading {
+    font-size: 2rem;
+    color: #bebfcf;
+    margin-bottom: 20px;
+}
+
+.projects_intro {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project_card {
+    background: #fff;
     border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.portfolio_item:hover {
+.project_card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(8, 241, 241, 0.979); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.portfolio_image {
+.project_image {
     width: 100%;
-    height: auto; /* Adjusts height automatically */
+    height: auto;
     object-fit: cover;
 }
 
-.portfolio_content {
+.project_details {
     padding: 16px;
     text-align: center;
 }
 
-.portfolio_content h2 {
+.project_title {
     font-size: 1.5rem;
     color: #1a1c3b;
     margin-bottom: 8px;
 }
 
-.portfolio_content p {
+.project_description {
     font-size: 0.9rem;
     color: #666;
     line-height: 1.4;
@@ -785,8 +817,7 @@ body{
     text-overflow: ellipsis;
 }
 
-/* Button Styles */
-.view_project {
+.project_link {
     display: inline-block;
     padding: 10px 20px;
     font-size: 0.9rem;
@@ -795,34 +826,29 @@ body{
     text-decoration: none;
     border-radius: 4px;
     margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
-.view_project:hover {
+.project_link:hover {
     background-color: #2aa8e6;
 }
 
-/* Additional Breakpoints */
 @media (max-width: 768px) {
-    .portfolio_grid {
+    .projects_grid {
         gap: 15px;
-    }
-
-    .portfolio_item {
-        width: 100%;
-        max-width: 100%; /* Stretch to container */
     }
 }
 
 @media (max-width: 360px) {
-    .heading {
+    .projects_heading {
         font-size: 1.5rem;
     }
-
-    .portfolio_content h2 {
+    
+    .project_title {
         font-size: 1.2rem;
     }
-
-    .portfolio_content p {
+    
+    .project_description {
         font-size: 0.8rem;
     }
 }
@@ -830,41 +856,167 @@ body{
 /*Project Page End*/
 
 
-.contact {
+
+
+/*Certificate Page Start*/
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: #1a1c3b;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+/* .Card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+} */
+
+
+.card h2 {
+    z-index: 1;
+    color: rgb(12, 237, 245);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card p {
+    color: #d0d0d0;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: rgba(162, 11, 182, 0.589);
+    color: rgb(12, 237, 245);
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 3px solid #2abb7f;
+
+}
+
+.view_certificate a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    background-color: #1f8eafb2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.view_certificate a:hover {
+    background-color: #b413e6cc;
+}
+
+.card a:hover {
+    background-color: #0c3796;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 238));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    background-color: #0e132e;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+
+
+/* Certificate Page End*/
+
+/*Contact Page Start*/
+
+#Contact_ {
+    margin: 10px auto;
     padding: 80px 20px;
     background: linear-gradient(to bottom, #1a1c3b, #0c1022);
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+}
+#Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1c3b;
 }
 
-.contact .container1 {
-    max-width: 700px;
+/* Center the container */
+.container5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background: #0c1022;
+    max-width: 700px;
+    /* background:  #14172c;f */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-.contact .heading {
-    font-size: 36px;
-    color: #3cf;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-
+/* Ensure the form is centered */
 .contact_form {
     width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
+/* Center form elements */
 .contact_form .form_group {
-    margin-bottom: 20px;
+    width: 100%;
     text-align: left;
 }
 
@@ -905,67 +1057,31 @@ body{
     cursor: pointer;
     transition: background 0.3s;
     font-weight: 600;
+    margin-top: 15px;
 }
 
 .contact_form button:hover {
     background: #f06;
 }
 
-
-/* Media Query for Responsiveness */
-@media (max-width: 1213px) {
-    .home {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 10%;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container5 {
+        width: 90%;
+        padding: 30px;
     }
-    .home_social{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: row;
-    }
-
-    .circle .image {
-
-        display: none;
-    }
-    .home_img .circle::after {
-        display: none;
-    }
-    .home_img .circle {
-        display: none;
-    }
-    .home_img {
-        display: none;
-    }
-    
-
-    .container1 {
-        margin-left: 0px;
-    }
-
-    .portfolio_grid {
-        justify-content: center;
-    }
-
-    .about_content h2 {
-        text-align: center;
+    .contact_form {
+        max-width: 100%;
     }
 }
 
-@media (max-width: 320px) {
-    .home {
-        height: fit-content;
-        flex-direction: column-reverse;
-    }
-    .home_content {
-        margin-top: 10rem;
-        max-width: 500px;
-        margin-left: -30px;
+@media (max-width: 480px) {
+    .container5 {
+        width: 95%;
+        padding: 20px;
     }
 }
+
+
+/*Contact Page End*/
+
