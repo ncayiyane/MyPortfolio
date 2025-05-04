@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="skillset.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="achievements.css">
+    <link rel="stylesheet" href="contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -26,49 +31,97 @@
     
 
     <!-- Home Page  -->
-    <section id="Home"  class="home animate-on-scroll">
-        <div class="home_social">
-            <a href="https://www.linkedin.com/in/aphiwe-ncayiyane-4149b31a8/" ><i class='bx bxl-linkedin'></i></i></a>
-            <a href="https://github.com/ncayiyane"><i class='bx bxl-github'></i></i></a>
-            <a href="https://www.instagram.com/aphiwe_nc/"><i class='bx bxl-instagram'></i></i></a>
-        </div>
-        <div class="home_content">
-            <h1>Hi, I'm <span>Aphiwe Andrew Ncayiyane</span></h1>
-            <h3>Full Stack Developer</h3>
-            <p> I am A Full Stack Developer with a passion for creating beautiful and functional web applications.</p>
-            <a href="Aphiwe Ncayiyane CV 2025.pdf" class="btn">Download CV</a>
-        </div>
-        <div class="home_img">
-            <div class="circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-                    <img src="Graduate.jpg" alt="my image">
+    <section id="Home" class="home animate-on-scroll">
+        <div class="home_container">
+            <div class="home_content">
+                <div class="home_greeting">
+                    <span class="greeting-text">Hello, Welcome to my Portfolio</span>
+                </div>
+                <h1>Hi, I'm <span class="highlight-text">Aphiwe Andrew Ncayiyane</span></h1>
+                <h3>Full Stack Developer</h3>
+                <p>I craft responsive websites and web applications that deliver exceptional user experiences. Specializing in both front-end and back-end development to build complete, scalable solutions.</p>
+                
+                <div class="home_buttons">
+                    <a href="Aphiwe Ncayiyane CV 2025.pdf" class="btn primary-btn">Download CV</a>
+                    <a href="#Contact" class="btn secondary-btn">Let's Talk</a>
+                </div>
+                
+                <div class="home_social">
+                    <p class="social-text">Find me on:</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aphiwe-ncayiyane-4149b31a8/" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/ncayiyane" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/aphiwe_nc/" aria-label="Instagram Profile"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="home_img">
+                <div class="profile-frame">
+                    <div class="profile-background"></div>
+                    <div class="profile-border">
+                        <div class="profile-image">
+                            <img src="Graduate.jpg" alt="Aphiwe Andrew Ncayiyane - Full Stack Developer">
+                        </div>
+                    </div>
+                    <div class="profile-glow"></div>
+                    <div class="profile-decoration top-left"></div>
+                    <div class="profile-decoration top-right"></div>
+                    <div class="profile-decoration bottom-left"></div>
+                    <div class="profile-decoration bottom-right"></div>
                 </div>
             </div>
         </div>
     </section>
     <!--Home Page End-->
 
-    <!-- About Me Page  Start-->
+    <!-- About Me Page Start-->
     <section id="About" class="about animate-on-scroll">
-        <div class="about_content">
-            <h2>About Me</h2>
-            <p>Hello! I'm Aphiwe Andrew Ncayiyane, a passionate Full Stack Developer with experience in building
-                responsive and interactive web applications. My journey in web development began with a curiosity for
-                technology and a desire to create user-friendly experiences.</p>
-            <p>In my work, I focus on HTML, CSS, JavaScript, and back-end technologies to bring designs to life,
-                ensuring that every project is not only visually appealing but also functional and accessible.</p>
-            <p>I completed my higher education at Walter Sisulu University, where I obtained my National Diploma in
-                Information Technology and Advanced Diploma in ICT (Communication Networks).</p>
-            <p>When I’m not coding, you can find me exploring new technologies, reading about design trends, or enjoying
-                outdoor adventures.</p>
-        </div>
-        <div class="about_image">
-            <img src="Graduate2021.jpg" alt="About me image">
+        <div class="about_container">
+            <div class="about_content">
+                <div class="section-title-container">
+                    <span class="section-subtitle">Get To Know</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
+                <div class="about-text-container">
+                    <p class="about-text animate-text">
+                        Hello! I'm <span class="highlight-text">Aphiwe Andrew Ncayiyane</span>, a passionate Full Stack Developer with experience in building
+                        responsive and interactive web applications. My journey in web development began with a curiosity for
+                        technology and a desire to create user-friendly experiences.
+                    </p>
+                    
+                    <p class="about-text animate-text">
+                        In my work, I focus on front-end technologies like <span class="tech-highlight">HTML</span>, <span class="tech-highlight">CSS</span>, <span class="tech-highlight">JavaScript</span>, and <span class="tech-highlight">React</span>, along with back-end technologies such as <span class="tech-highlight">Python</span>, <span class="tech-highlight">Java</span>, <span class="tech-highlight">SQL</span>, <span class="tech-highlight">Node.js</span>, <span class="tech-highlight">Express</span>, and <span class="tech-highlight">MongoDB</span> to bring designs to life, ensuring that every project is not only visually appealing but also functional and accessible. I also have expertise in <span class="tech-highlight">Communication Networks</span>, allowing me to develop robust and efficient networked applications.
+                    </p>
+                    
+                    <p class="about-text animate-text">
+                        I completed my higher education at <span class="highlight-text">Walter Sisulu University</span>, where I obtained my National Diploma in
+                        Information Technology and Advanced Diploma in ICT (Communication Networks).
+                    </p>
+                    
+                    <p class="about-text animate-text">
+                        When I'm not coding, you can find me exploring new technologies, reading about design trends, or enjoying
+                        outdoor adventures.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="about_image_container">
+                <div class="about_image_frame">
+                    <div class="about_image_background"></div>
+                    <div class="about_image">
+                        <img src="Graduate2021.jpg" alt="Aphiwe Andrew Ncayiyane - About me">
+                    </div>
+                    <div class="about_image_overlay"></div>
+                </div>
+                <div class="experience-badge">
+                    <span class="exp-years">2+</span>
+                    <span class="exp-text">Years of<br>Experience</span>
+                </div>
+            </div>
         </div>
     </section>
-
     <!--About Me Page End-->
 
     
@@ -85,54 +138,64 @@
             </div>
           </div>
           <div class="skills-grid">
-            <div class="skill-card">
-              <img src="/Skills/html.png" alt="HTML" class="skill-icon">
+            <div class="skill-card" style="--i:1">
+              <img src="./Skills/html.png" alt="HTML" class="skill-icon">
               <p>HTML</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/css-3.png" alt="CSS" class="skill-icon">
+            <div class="skill-card" style="--i:2">
+              <img src="./Skills/css-3.png" alt="CSS" class="skill-icon">
               <p>CSS</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/js.png" alt="JavaScript" class="skill-icon">
+            <div class="skill-card" style="--i:3">
+              <img src="./Skills/js.png" alt="JavaScript" class="skill-icon">
               <p>JavaScript</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/node.js logo.png" alt="Node.js" class="skill-icon">
+            <div class="skill-card" style="--i:4">
+              <img src="./Skills/node.js logo.png" alt="Node.js" class="skill-icon">
               <p>Node.js</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/atom.png" alt="React" class="skill-icon">
+            <div class="skill-card" style="--i:5">
+              <img src="./Skills/atom.png" alt="React" class="skill-icon">
               <p>React</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/python.png" alt="Python" class="skill-icon">
+            <div class="skill-card" style="--i:6">
+              <img src="./Skills/python.png" alt="Python" class="skill-icon">
               <p>Python</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/java.png" alt="Java" class="skill-icon">
+            <div class="skill-card" style="--i:7">
+              <img src="./Skills/java.png" alt="Java" class="skill-icon">
               <p>Java</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/github.png" alt="GitHub" class="skill-icon">
+            <div class="skill-card" style="--i:8">
+              <img src="./Skills/github.png" alt="GitHub" class="skill-icon">
               <p>GitHub</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/figma.png" alt="Figma" class="skill-icon">
+            <div class="skill-card" style="--i:9">
+              <img src="./Skills/figma.png" alt="Figma" class="skill-icon">
               <p>Figma</p>
             </div>
       
-            <div class="skill-card">
-              <img src="/Skills/palette.png" alt="Canva" class="skill-icon">
+            <div class="skill-card" style="--i:10">
+              <img src="./Skills/palette.png" alt="Canva" class="skill-icon">
               <p>Canva</p>
+            </div>
+
+            <div class="skill-card" style="--i:11">
+              <img src="./Skills/database-storage.png" alt="SQL" class="skill-icon">
+              <p>SQL</p>
+            </div>
+
+            <div class="skill-card" style="--i:12">
+              <img src="./Skills/Topology_copy.png" alt="Communication Networks" class="skill-icon">
+              <p>Networks</p>
             </div>
           </div>
         </div>
@@ -141,9 +204,12 @@
 
       <section id="SkillSet" class="skill-set animate-on-scroll">
         <div class="skill-container">
-            <h1 class="section-title">My Expertise</h1>
+            <div class="skills-header">
+              <p class="header-text">Professional Attributes</p>
+              <h1 class="section-title">My Expertise</h1>
+            </div>
             <div class="radial-progress-bars">
-                <div class="radial-progress">
+                <div class="radial-progress" data-skill="communication">
                     <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="background-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="progress-path progress-comm" cx="100" cy="100" r="80"></circle>
@@ -151,7 +217,7 @@
                     <div class="percentage">100%</div>
                     <div class="skill-name">Communication</div>
                 </div>
-                <div class="radial-progress">
+                <div class="radial-progress" data-skill="problem-solving">
                     <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="background-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="progress-path progress-prob" cx="100" cy="100" r="80"></circle>
@@ -159,7 +225,7 @@
                     <div class="percentage">100%</div>
                     <div class="skill-name">Problem Solving</div>
                 </div>
-                <div class="radial-progress">
+                <div class="radial-progress" data-skill="teamwork">
                     <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="background-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="progress-path progress-team" cx="100" cy="100" r="80"></circle>
@@ -167,7 +233,7 @@
                     <div class="percentage">100%</div>
                     <div class="skill-name">Team Work</div>
                 </div>
-                <div class="radial-progress">
+                <div class="radial-progress" data-skill="creativity">
                     <svg x="0px" y="0px" viewBox="0 0 200 200">
                         <circle class="background-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="progress-path progress-crea" cx="100" cy="100" r="80"></circle>
@@ -186,43 +252,54 @@
     
     <section id="projects" class="projects_section animate-on-scroll">
         <div class="container_custom">
-            <h1 class="projects_heading">My Projects</h1>
-            <p class="projects_intro">Here are some of the projects I’ve worked on, showcasing my skills and creativity.</p>
+            <div class="projects_header">
+                <p class="header_subtitle">Recent Work</p>
+                <h1 class="projects_heading">My Projects</h1>
+                <p class="projects_intro">Here are some of the projects I’ve worked on, showcasing my skills and creativity.</p>
+            </div>
             <div class="projects_grid">
                 <!-- Project 1 -->
                 <div class="project_card">
-                    <img src="/Projects/forevercare.png" alt="Forever Care" class="project_image">
+                    <img src="./Projects/forevercare.png" alt="Forever Care" class="project_image">
                     <div class="project_details">
                         <h2 class="project_title">Forever Care Website</h2>
                         <p class="project_description">The website provides a seamless healthcare experience with free essential services, easy bookings, and personalized care, built using HTML, CSS, and React.</p>
-                        <a href="https://forever-care.netlify.app/" class="project_link">View Project</a>
+                        <div class="project_link_container">
+                            <a href="https://forever-care.netlify.app/" class="project_link">View Project</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project_card">
-                    <img src="/Projects/Reactapp.png" alt="FavMoviesApp" class="project_image">
+                    <img src="./Projects/Reactapp.png" alt="FavMoviesApp" class="project_image">
                     <div class="project_details">
                         <h2 class="project_title">FavMoviesApp</h2>
                         <p class="project_description">FavMoviesApp lets users search, view, and add movies to their favorites, offering a dynamic, user-friendly experience built with React.</p>
-                        <a href="https://favmoviesapp.netlify.app" class="project_link">View Project</a>
+                        <div class="project_link_container">
+                            <a href="https://favmoviesapp.netlify.app" class="project_link">View Project</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project_card">
-                    <img src="/Projects/Node.png" alt="Node.js API" class="project_image">
+                    <img src="./Projects/Node.png" alt="Node.js API" class="project_image">
                     <div class="project_details">
                         <h2 class="project_title">Node.js API</h2>
                         <p class="project_description">The Node.js API repository showcases creating a simple backend with Node.js and Express, including routing, HTTP requests, and server setup, serving as a foundation for advanced features like authentication and data persistence.</p>
-                        <a href="https://github.com/ncayiyane/Node.js-API.git" class="project_link">View Project</a>
+                        <div class="project_link_container">
+                            <a href="https://github.com/ncayiyane/Node.js-API.git" class="project_link">View Project</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project_card">
-                    <img src="/Projects/Eco Website.png" alt="Ecommerce Website" class="project_image">
+                    <img src="./Projects/Eco Website.png" alt="Ecommerce Website" class="project_image">
                     <div class="project_details">
                         <h2 class="project_title">Ecommerce Website</h2>
                         <p class="project_description">The E-Commerce Project is an online marketplace built with HTML, CSS, and React, designed to help local creators and small businesses showcase and sell unique, handmade products.</p>
-                        <a href="https://e-commerce-project-e24b8.web.app/" class="project_link">View Project</a>
+                        <div class="project_link_container">
+                            <a href="https://e-commerce-project-e24b8.web.app/" class="project_link">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,56 +310,75 @@
 <section id="achievements-section" class="achievements-container animate-on-scroll">
     <div class="achievements-box">
         <div class="achievements-header">
+            <p class="achievements-subtitle">Recognition</p>
             <p class="achievements-title">My Achievements</p>
         </div>
 
         <div class="achievements-grid">
             <div class="achievement-card">
+                <i class='bx bx-certification certificate-icon'></i>
                 <h2>HTML</h2>
                 <p>HTML Certificate SOLOLEARN.</p>
-                <a href="/Achievement/HTML SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                <div class="achievement-btn-container">
+                    <a href="./Achievement/HTML SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                </div>
             </div>
 
             <div class="achievement-card">
+                <i class='bx bx-certification certificate-icon'></i>
                 <h2>CSS</h2>
                 <p>CSS Certificate SOLOLEARN.</p>
-                <a href="/Achievement/CSS SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                <div class="achievement-btn-container">
+                    <a href="./Achievement/CSS SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                </div>
             </div>
 
             <div class="achievement-card">
+                <i class='bx bx-certification certificate-icon'></i>
                 <h2>JavaScript</h2>
                 <p>JavaScript Certificate SOLOLEARN.</p>
-                <a href="/Achievement/JAVASCRIPT SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                <div class="achievement-btn-container">
+                    <a href="./Achievement/JAVASCRIPT SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                </div>
             </div>
 
             <div class="achievement-card">
+                <i class='bx bx-certification certificate-icon'></i>
                 <h2>Web Development</h2>
                 <p>Web Development Certificate SOLOLEARN.</p>
-                <a href="/Achievement/WEB DEVELOPMENT SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                <div class="achievement-btn-container">
+                    <a href="./Achievement/WEB DEVELOPMENT SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                </div>
             </div>
 
             <div class="achievement-card">
+                <i class='bx bx-certification certificate-icon'></i>
                 <h2>React JS</h2>
                 <p>React + Redux Certificate SOLOLEARN.</p>
-                <a href="/Achievement/REACT SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                <div class="achievement-btn-container">
+                    <a href="./Achievement/REACT SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                </div>
             </div>
 
             <div class="achievement-card">
+                <i class='bx bx-certification certificate-icon'></i>
                 <h2>Python</h2>
                 <p>Python Certificate SOLOLEARN.</p>
-                <a href="/Achievement/PYTHON SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                <div class="achievement-btn-container">
+                    <a href="./Achievement/PYTHON SOLOLEARN.pdf" class="achievement-btn" target="_blank">View Certificate</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
     <!-- Contact Page Start-->
-    
-
-    <section id="Contact" class="contact _section animate-on-scroll">
-        <div class="container5">
-            <h1 class="heading">Contact Me</h1>
-            <p>If you have any questions, feel free to reach out. I'm always happy to connect!</p>
+    <section id="Contact" class="contact_section animate-on-scroll">
+        <div class="contact_container">
+            <div class="contact_header">
+                <p class="contact_subtitle">Get In Touch</p>
+                <h1 class="contact_heading">Contact Me</h1>
+                <p class="contact_intro">If you have any questions, feel free to reach out. I'm always happy to connect!</p>
+            </div>
             <form class="contact_form" action="https://getform.io/f/bollzkxa" method="POST">
                 <div class="form_group">
                     <label for="name">Full Name:</label>
@@ -296,8 +392,13 @@
                     <label for="message">Your Message:</label>
                     <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="submit_btn">Send Message</button>
             </form>
+            <div class="social_links">
+                <a href="https://github.com/ncayiyane" target="_blank" class="social_icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/aphiwe-ncayiyane-b0a7b6249/" target="_blank" class="social_icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:aphiwencayiyane@gmail.com" class="social_icon"><i class='bx bx-envelope'></i></a>
+            </div>
         </div>
     </section>
     <script src="sandbox.js"></script>    

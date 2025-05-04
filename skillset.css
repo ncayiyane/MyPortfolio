@@ -1,0 +1,222 @@
+/* Skill Set Section Styles */
+.skill-set {
+  width: 100%;
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #1a1c3b 0%, #0c1022 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-set::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(51, 204, 255, 0.05) 0%, transparent 70%);
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.skill-set::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(240, 102, 102, 0.05) 0%, transparent 70%);
+  bottom: -200px;
+  right: -200px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.skill-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.skill-container .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: linear-gradient(45deg, #f06, #3cf);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 8s linear infinite, fadeIn 1s ease forwards;
+  opacity: 0;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.skill-container .section-title::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #f06, #3cf);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  animation: widthAnimation 1.5s ease forwards;
+}
+
+@keyframes widthAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80px;
+  }
+}
+
+.radial-progress-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.radial-progress {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+}
+
+.radial-progress.animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.radial-progress svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.background-bar {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 10;
+}
+
+.progress-path {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform-origin: center;
+  stroke-dasharray: 502.4;
+  stroke-dashoffset: 502.4;
+}
+
+.progress-comm {
+  stroke: #3cf;
+  animation: progress-animation 2s ease forwards 0.5s;
+}
+
+.progress-prob {
+  stroke: #f06;
+  animation: progress-animation 2s ease forwards 0.7s;
+}
+
+.progress-team {
+  stroke: #9c44dc;
+  animation: progress-animation 2s ease forwards 0.9s;
+}
+
+.progress-crea {
+  stroke: #4dc247;
+  animation: progress-animation 2s ease forwards 1.1s;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 1.5s;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ccc;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 1.7s;
+}
+
+/* Hover effects */
+.radial-progress:hover {
+  transform: translateY(-10px);
+}
+
+.radial-progress:hover .percentage {
+  color: #3cf;
+  text-shadow: 0 0 10px rgba(51, 204, 255, 0.5);
+}
+
+.radial-progress:hover .skill-name {
+  color: #fff;
+}
+
+/* Animations */
+@keyframes progress-animation {
+  from {
+    stroke-dashoffset: 502.4;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .radial-progress-bars {
+    gap: 20px;
+  }
+  
+  .radial-progress {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .percentage {
+    font-size: 1.5rem;
+  }
+  
+  .skill-name {
+    font-size: 0.9rem;
+  }
+}
