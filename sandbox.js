@@ -73,6 +73,13 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
     
+    // Force all project cards to be visible immediately
+    document.querySelectorAll('.project_card').forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('animated');
+        }, 150 * index);
+    });
+    
     // Check for elements to animate on scroll
     checkScrollAnimation();
 });
@@ -100,6 +107,17 @@ function checkScrollAnimation() {
         if (cardTop < triggerBottom) {
             card.style.opacity = '1';
             card.style.transform = 'translateY(0)';
+        }
+    });
+    
+    // Animate project cards when they come into view
+    const projectCards = document.querySelectorAll('.project_card');
+    projectCards.forEach((card, index) => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < triggerBottom) {
+            setTimeout(() => {
+                card.classList.add('animated');
+            }, 150 * index);
         }
     });
 }
