@@ -1239,18 +1239,39 @@ body{
 
 
 @media (max-width: 956px) {
+    .about_container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    /* Base styles for the image container - specific details in styleMobile.css */
+    .about_image_container {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        opacity: 1;
+        display: block;
+    }
+    
+    .about_image_frame {
+        height: 350px;
+    }
+    
     .about_image img {
-        display: none
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-
-    .about_image {
-        display: none;
+    
+    .experience-badge {
+        bottom: 10px;
+        right: -15px;
+        width: 90px;
+        height: 90px;
     }
-  }
-
-
-/* About Me style end  */
-
+}
 
 
 /* Skills Style Start */
@@ -1905,7 +1926,3 @@ body{
 
 
 /*Contact Page End*/
-
-. s t a t i c - t e x t   {   f o n t - s i z e :   2 8 p x ;   f o n t - w e i g h t :   7 0 0 ;   p o s i t i o n :   r e l a t i v e ;   c o l o r :   # f f f ;   w h i t e - s p a c e :   n o w r a p ;   o p a c i t y :   0 ;   a n i m a t i o n :   s l i d e L e f t   1 s   e a s e   f o r w a r d s ;   a n i m a t i o n - d e l a y :   0 . 1 s ;   }  
- h 3   {   f o n t - s i z e :   2 8 p x ;   f o n t - w e i g h t :   7 0 0 ;   c o l o r :   # f f f ;   m a r g i n - b o t t o m :   1 . 5 r e m ;   o p a c i t y :   0 ;   a n i m a t i o n :   s l i d e L e f t   1 s   e a s e   f o r w a r d s ;   a n i m a t i o n - d e l a y :   0 . 1 s ;   }  
- 

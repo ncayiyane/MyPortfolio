@@ -1,43 +1,71 @@
 @media screen and (max-width: 768px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
-    }
-    /*About*/
+    /* About section mobile styles */
     .about {
         width: 100%;
-        /* display: flex;
-        justify-content: space-between; */
         align-items: center;
         padding: 50px 10%;
-        background: #1a1c3b; /* A contrasting background color */
+        background: #1a1c3b;
     }
     
     .about_content {
-        max-width: 600px;
+        max-width: 100%;
+        text-align: center;
     }
     
     .about_content h2 {
-        font-size: 36px;
-        font-weight: 700;
+        font-size: 32px;
         margin-bottom: 20px;
+        text-align: center;
     }
     
     .about_content p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.6;
         margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    /* Critical fixes for image display on small devices */
+    .about_image_container {
+        max-width: 280px;
+        position: relative;
+        display: block !important;
+        opacity: 1 !important;
+        animation: none !important;
+    }
+    
+    .about_image_frame {
+        height: 320px;
+        transform: none !important;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
     
     .about_image {
-        width: 400px;
+        position: relative;
+        z-index: 2;
+        display: block !important;
     }
     
     .about_image img {
-        max-width: 100%;
-        border-radius: 10px; /* Optional: Add some border radius for aesthetics */
+        display: block !important;
+        border-radius: 10px;
+    }
+    
+    .experience-badge {
+        position: absolute;
+        bottom: 10px;
+        right: -15px;
+        width: 90px;
+        height: 90px;
+        z-index: 10;
+    }
+    
+    .exp-years {
+        font-size: 1.8rem;
+    }
+    
+    .exp-text {
+        font-size: 0.7rem;
     } 
     /*form*/
     .contact {
