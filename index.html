@@ -18,18 +18,97 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <button class="menu-toggle" aria-label="Toggle Menu">
-            &#9776; <!-- Hamburger icon -->
-        </button>
-        <nav class="navbar">
-            <a href="#Home" style="--i:1;" class="active">Home</a>
-            <a href="#About" style="--i:2;">About</a>
-            <a href="#TechSkillsSection" style="--i:3;">Skills</a>
-            <a href="#projects" style="--i:4;">Portfolio</a>
-            <a href="#Contact" style="--i:5;">Contact</a>
-        </nav>
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#Home" class="logo">
+                <span class="logo-text">Portfolio</span>
+                <div class="logo-glow"></div>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <div class="nav-background"></div>
+                <a href="#Home" style="--i:1;" class="nav-link active" data-section="home">
+                    <span class="nav-text">Home</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#About" style="--i:2;" class="nav-link" data-section="about">
+                    <span class="nav-text">About</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#TechSkillsSection" style="--i:3;" class="nav-link" data-section="skills">
+                    <span class="nav-text">Skills</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#projects" style="--i:4;" class="nav-link" data-section="portfolio">
+                    <span class="nav-text">Portfolio</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#Contact" style="--i:5;" class="nav-link" data-section="contact">
+                    <span class="nav-text">Contact</span>
+                    <div class="nav-indicator"></div>
+                </a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aphiwe-ncayiyane-4149b31a8/" class="social-link" aria-label="LinkedIn Profile">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/ncayiyane" class="social-link" aria-label="GitHub Profile">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <span class="mobile-menu-title">Navigation</span>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Menu">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="#Home" class="mobile-nav-link active" data-section="home">
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </a>
+                <a href="#About" class="mobile-nav-link" data-section="about">
+                    <i class='bx bx-user'></i>
+                    <span>About</span>
+                </a>
+                <a href="#TechSkillsSection" class="mobile-nav-link" data-section="skills">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="mobile-nav-link" data-section="portfolio">
+                    <i class='bx bx-briefcase'></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="#Contact" class="mobile-nav-link" data-section="contact">
+                    <i class='bx bx-envelope'></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+            <div class="mobile-social-links">
+                <a href="https://www.linkedin.com/in/aphiwe-ncayiyane-4149b31a8/" class="mobile-social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/ncayiyane" class="mobile-social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.instagram.com/aphiwe_nc/" class="mobile-social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
     </header>
     
 
@@ -428,6 +507,7 @@
             </div>
         </div>
     </section>
+    <script src="header.js"></script>
     <script src="sandbox.js"></script>    
 </body>
 
