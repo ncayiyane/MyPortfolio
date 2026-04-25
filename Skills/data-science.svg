@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#4ecdc4" />
+      <stop offset="1" stop-color="#45b7d1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#071026" />
+  <!-- database cylinder -->
+  <ellipse cx="160" cy="160" rx="84" ry="28" fill="url(#g1)" opacity="0.95" />
+  <rect x="76" y="160" width="168" height="96" rx="16" fill="#0c1b2a" stroke="url(#g1)" stroke-width="4" />
+  <ellipse cx="160" cy="256" rx="84" ry="28" fill="#02121a" stroke="url(#g1)" stroke-width="3" />
+  <!-- line chart -->
+  <polyline points="320,340 360,260 420,300 480,200" fill="none" stroke="url(#g1)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="360" cy="260" r="10" fill="#fff" />
+  <circle cx="420" cy="300" r="10" fill="#fff" />
+  <circle cx="480" cy="200" r="10" fill="#fff" />
+  <!-- label -->
+  <text x="40" y="420" fill="#9fd" font-family="Verdana" font-size="28">Data Science</text>
+</svg>
